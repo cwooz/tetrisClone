@@ -11,6 +11,9 @@
 		"type": "git",
 		"url": "git remote add origin https://github.com/cwooz/tetrisClone.git"
 	},
+	"engines": {
+		"node": "9.2.0"
+	},
 	"dependencies": {
 		"body-parser": "^1.17.1",
 		"connect-flash": "^0.1.1",
