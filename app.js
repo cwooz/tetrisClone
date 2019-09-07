@@ -1,7 +1,7 @@
 var express = require('express'),
-	app = express(),
-	bodyParser = require('body-parser'),
-	expressSanitizer = require('express-sanitizer');
+	  app = express(),
+	  bodyParser = require('body-parser'),
+	  expressSanitizer = require('express-sanitizer');
 
 // APP CONFIG
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,6 +17,7 @@ app.get('/', function(req, res) {
 });
 
 //LISTEN===============================================
-app.listen(process.env.PORT, process.env.IP, function() {
-	console.log('SERVER HAS STARTED');
+var port = 1337;
+app.listen((process.env.PORT, process.env.IP || port), () => {
+	console.log(`Listening on port ${port}...🎧`);
 });
